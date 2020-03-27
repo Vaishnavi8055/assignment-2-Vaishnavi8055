@@ -20,4 +20,9 @@ public class MyPriorityQueue {
     public boolean isEmpty(){
         return front==null;
     }
+
+    public void insert(int data,int priority){
+
+
+    }
 }
