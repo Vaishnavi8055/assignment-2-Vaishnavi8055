@@ -29,6 +29,15 @@ public class MyPriorityQueue {
        }
        else{
            Node current=front;
+           while(current.getNext()!=null && current.getNext().getPriority() <= node.getPriority()){
+               current=current.getNext();
+           }
+           node.setNext(current.getNext());
+           current.setNext(node);
        }
+    }
+
+    public void display(){
+
     }
 }
