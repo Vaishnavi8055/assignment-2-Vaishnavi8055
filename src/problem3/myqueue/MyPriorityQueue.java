@@ -12,7 +12,7 @@ public class MyPriorityQueue {
     private Node front;
     private Node rear;
 
-    public MyPriorityQueue(Node front, Node rear) {
+    public MyPriorityQueue() {
         this.front = null;
         this.rear = null;
     }
@@ -43,9 +43,9 @@ public class MyPriorityQueue {
       }
       else{
           Node current=front;
-          System.out.println("Data && Priority");
+          System.out.println("Data:  Priority:");
           while(current!=null){
-              System.out.println(current.getData()+ "&&" +current.getPriority());
+              System.out.println(current.getData()+ " , " +current.getPriority());
               current=current.getNext();
           }
       }
