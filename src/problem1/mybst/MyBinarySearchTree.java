@@ -10,6 +10,7 @@ package problem1.mybst;
 
 import problem1.node.TreeNode;
 
+import java.util.LinkedList;
 import java.util.Queue;
 
 public class MyBinarySearchTree {
@@ -25,4 +26,13 @@ public class MyBinarySearchTree {
        }
        return root;
    }
+
+   public void countNodesWithoutLeftChild(TreeNode root){
+       if(root==null){
+           return;
+       }
+       Queue<TreeNode> queues=new LinkedList<TreeNode>();
+
+   }
+
 }
