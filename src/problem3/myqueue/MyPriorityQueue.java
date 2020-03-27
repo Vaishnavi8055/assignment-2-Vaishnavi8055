@@ -27,5 +27,8 @@ public class MyPriorityQueue {
          node.setNext(front);
          front=node;
        }
+       else{
+           Node current=front;
+       }
     }
 }
