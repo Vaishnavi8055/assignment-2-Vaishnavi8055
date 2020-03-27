@@ -13,9 +13,16 @@ import problem1.node.TreeNode;
 import java.util.Queue;
 
 public class MyBinarySearchTree {
-static Queue<TreeNode> queue;
+   static Queue<TreeNode> queue;
 
-public TreeNode insertNode(TreeNode root,int data){
-
-}
+   public TreeNode insertNode(TreeNode root,int data) {
+       if (root == null) {
+           return new TreeNode(data);
+       } else if (data > root.getData()) {
+           root.setRight(insertNode(root.getRight(), data));
+       } else {
+           root.setLeft(insertNode(root.getLeft(), data));
+       }
+       return root;
+   }
 }
