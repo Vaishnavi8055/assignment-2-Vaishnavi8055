@@ -21,7 +21,7 @@ public class MyPriorityQueue {
         return front==null;
     }
 
-    public void insert(int data,int priority){
+    public void insertNode(int data,int priority){
       Node node =new Node(data,priority);
        if(isEmpty()||node.getPriority()<front.getPriority()){
          node.setNext(front);
@@ -37,7 +37,17 @@ public class MyPriorityQueue {
        }
     }
 
-    public void display(){
-
+    public void displayQueue(){
+      if(isEmpty()){
+          System.out.println("Underflow Condition ocurred");
+      }
+      else{
+          Node current=front;
+          System.out.println("Data && Priority");
+          while(current!=null){
+              System.out.println(current.getData()+ "&&" +current.getPriority());
+              current=current.getNext();
+          }
+      }
     }
 }
