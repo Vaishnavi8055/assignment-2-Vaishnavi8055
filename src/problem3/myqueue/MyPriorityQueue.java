@@ -11,4 +11,9 @@ import problem3.node.Node;
 public class MyPriorityQueue {
     private Node front;
     private Node rear;
+
+    public MyPriorityQueue(Node front, Node rear) {
+        this.front = null;
+        this.rear = null;
+    }
 }
