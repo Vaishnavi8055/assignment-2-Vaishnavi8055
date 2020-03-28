@@ -17,4 +17,20 @@ public class Node {
         this.student = student1;
         nextRef = null;
     }
+
+    public Student getStudent() {
+        return student;
+    }
+
+    public void setStudent(Student student) {
+        this.student = student;
+    }
+
+    public Node getNextRef() {
+        return nextRef;
+    }
+
+    public void setNextRef(Node nextRef) {
+        this.nextRef = nextRef;
+    }
 }
