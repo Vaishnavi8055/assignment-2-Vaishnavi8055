@@ -18,6 +18,7 @@ public class MyMain {
         myBinarySearchTree.insertNode(treeRoot,54);
         myBinarySearchTree.insertNode(treeRoot,32);
         myBinarySearchTree.insertNode(treeRoot,34);
+        myBinarySearchTree.insertNode(treeRoot,12);
 
 
     }
