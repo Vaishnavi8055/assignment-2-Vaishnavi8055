@@ -8,9 +8,8 @@ package problem1.mybst;
 // to implement BinarySearchTree
 
 
-import com.sun.source.tree.Tree;
-import problem1.node.TreeNode;
 
+import problem1.node.TreeNode;
 import java.util.LinkedList;
 import java.util.Queue;
 

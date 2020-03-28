@@ -12,6 +12,7 @@ import problem1.node.TreeNode;
 
 public class MyMain {
     public static void main(String[] args) {
+        MyBinarySearchTree myBinarySearchTree=new MyBinarySearchTree();
         TreeNode treeRoot=new TreeNode(45);
 
 
