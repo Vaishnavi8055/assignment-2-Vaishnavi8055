@@ -10,4 +10,5 @@ public class Student {
     private String studentName;
     private int studentUnivRollNumber;
     private int studentTotalBackLogs;
+    private int studentApperingCount;
 }
