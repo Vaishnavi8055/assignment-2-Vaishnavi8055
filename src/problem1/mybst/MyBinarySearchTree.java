@@ -8,6 +8,7 @@ package problem1.mybst;
 // to implement BinarySearchTree
 
 
+import com.sun.source.tree.Tree;
 import problem1.node.TreeNode;
 
 import java.util.LinkedList;
@@ -35,7 +36,10 @@ public class MyBinarySearchTree {
         queues.add(root);
         int count=0;
         while(queues !=null){
-
+            TreeNode current=queues.poll();
+            if (current==null){
+                break;
+            }
         }
 
    }
