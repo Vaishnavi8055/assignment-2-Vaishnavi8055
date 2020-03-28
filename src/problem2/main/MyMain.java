@@ -25,6 +25,12 @@ public class MyMain {
         myBinarySearchTree.insertNode(treeNode,7);
         myBinarySearchTree.insertNode(treeNode,78);
 
+        traverseOperation.displayPreOrderTraverse(treeNode);
+
+        System.out.println();
+
+        traverseOperation.displayPostOrderTraverse(treeNode);
+
     }
 
 }
