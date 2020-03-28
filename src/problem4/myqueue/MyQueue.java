@@ -50,7 +50,12 @@ public class MyQueue {
 
     public int getSize(MyQueue queue) {
         queue.current=queue.front;
-
+        while(queue.current!=null){
+            ++size;
+            queue.current=queue.current.getNext();
+        }
+        queue.current=queue.front;
+        return size;
     }
 
     public void setSize(int size) {
