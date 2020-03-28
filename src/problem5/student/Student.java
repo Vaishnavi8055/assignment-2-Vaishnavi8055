@@ -9,4 +9,5 @@ package problem5.student;
 public class Student {
     private String studentName;
     private int studentUnivRollNumber;
+    private int studentTotalBackLogs;
 }
