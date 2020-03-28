@@ -85,4 +85,15 @@ public class MyQueue {
          current=front;
      }
     }
+
+    public void preOrderTraverse(TreeNode node){
+        if(node==null){
+            return;
+        }
+        enqueueMethod(new Node(node));
+        preOrderTraverse(node.getLeft());
+        preOrderTraverse(node.getRight());
+    }
+
+
 }
