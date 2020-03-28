@@ -23,4 +23,37 @@ public class MyQueue {
         this.current = null;
         this.size = 0;
     }
+
+    public Node getFront() {
+        return front;
+    }
+
+    public void setFront(Node front) {
+        this.front = front;
+    }
+
+    public Node getEnd() {
+        return end;
+    }
+
+    public void setEnd(Node end) {
+        this.end = end;
+    }
+
+    public Node getCurrent() {
+        return current;
+    }
+
+    public void setCurrent(Node current) {
+        this.current = current;
+    }
+
+    public int getSize(MyQueue queue) {
+        queue.current=queue.front;
+
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
 }
