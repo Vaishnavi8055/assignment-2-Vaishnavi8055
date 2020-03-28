@@ -87,16 +87,18 @@ public class MyCircularQueue {
         }
     }
 
-    public void remove(String name){
-
-
-    }
-
-
-
-
-
-
-
-            }
+    public void remove(String name) {
+        currentNode = frontNode;
+        if (currentNode.getStudent().equals(name) && currentNode.getStudent().getStudentTotalBackLogs() == 0) {
+            currentNode = frontNode = frontNode.getNextRef();
         }
+        while (!currentNode.getNextRef().getStudent().getStudentName().equals(name)) {
+            currentNode = currentNode.getNextRef();
+            if (currentNode == frontNode)
+                return;
+        }
+        if (currentNode.getStudent().getStudentTotalBackLogs() == 0) {
+            currentNode.setNextRef(currentNode.getNextRef().getNextRef());
+        }
+    }
+}
