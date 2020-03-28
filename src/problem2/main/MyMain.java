@@ -21,6 +21,7 @@ public class MyMain {
         TreeNode treeNode=new TreeNode(37);
         myBinarySearchTree.insertNode(treeNode,4);
         myBinarySearchTree.insertNode(treeNode,2);
+        myBinarySearchTree.insertNode(treeNode,5);
 
     }
 
