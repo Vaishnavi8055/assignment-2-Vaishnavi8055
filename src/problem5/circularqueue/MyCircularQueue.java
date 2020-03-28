@@ -19,4 +19,32 @@ public class MyCircularQueue {
         endNode = null;
         currentNode = null;
     }
+
+    public Node getFrontNode() {
+        return frontNode;
+    }
+
+    public void setFrontNode(Node frontNode) {
+        this.frontNode = frontNode;
+    }
+
+    public Node getEndNode() {
+        return endNode;
+    }
+
+    public void setEndNode(Node endNode) {
+        this.endNode = endNode;
+    }
+
+    public Node getCurrentNode() {
+        return currentNode;
+    }
+
+    public void setCurrentNode(Node currentNode) {
+        this.currentNode = currentNode;
+    }
+
+    public void enqueueNode(Node new_Node){
+
+    }
 }
