@@ -44,19 +44,39 @@ public class MyCircularQueue {
         this.currentNode = currentNode;
     }
 
-    public void enqueueNode(Node new_Node){
-     if(frontNode==null){
-         currentNode=frontNode=new_Node;
-         return;
-     }
-     if(currentNode.getNextRef()==null){
-         currentNode.setNextRef(new_Node);
-         new_Node.setNextRef(currentNode);
-         endNode=new_Node;
-         return;
-     }
-     new_Node.setNextRef(currentNode.getNextRef());
-     currentNode.setNextRef(new_Node);
+    public void enqueueNode(Node new_Node) {
+        if (frontNode == null) {
+            currentNode = frontNode = new_Node;
+            return;
+        }
+        if (currentNode.getNextRef() == null) {
+            currentNode.setNextRef(new_Node);
+            new_Node.setNextRef(currentNode);
+            endNode = new_Node;
+            return;
+        }
+        new_Node.setNextRef(currentNode.getNextRef());
+        currentNode.setNextRef(new_Node);
+    }
+
+    public void displayQueue() {
+        currentNode = frontNode;
+        try {
+            do {
+                System.out.println(currentNode.getStudent().toString());
+                currentNode = currentNode.getNextRef();
+            }
+            while (currentNode != frontNode && currentNode != null);
+        } catch (NullPointerException ignored) {
+        }
+    }
+
+
+
+
+
+            }
+        }
     }
 
 }
