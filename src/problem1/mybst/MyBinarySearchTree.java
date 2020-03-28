@@ -40,6 +40,9 @@ public class MyBinarySearchTree {
             if (current==null){
                 break;
             }
+            if(current.getLeft()==null){
+                count++;
+            }
         }
 
    }
