@@ -27,7 +27,43 @@ public class Student {
         System.out.println("Appering Count Of Student : ");
         this.studentApperingCount = scanner.nextInt();
     }
-}
 
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public int getStudentUnivRollNumber() {
+        return studentUnivRollNumber;
+    }
+
+    public void setStudentUnivRollNumber(int studentUnivRollNumber) {
+        this.studentUnivRollNumber = studentUnivRollNumber;
+    }
+
+    public int getStudentTotalBackLogs() {
+        return studentTotalBackLogs;
+    }
+
+    public void setStudentTotalBackLogs(int studentTotalBackLogs) {
+        this.studentTotalBackLogs = studentTotalBackLogs;
+    }
+
+    public int getStudentApperingCount() {
+        return studentApperingCount;
+    }
+
+    public void setStudentApperingCount(int studentApperingCount) {
+        this.studentApperingCount = studentApperingCount;
+    }
+
+    public String toString(){
+        return "Name="+studentName+ "  "+
+                ", rollnumber="+studentUnivRollNumber+
+                ", backlogs="+studentTotalBackLogs+
+                ", apperingCount="+studentApperingCount;
     }
 }
