@@ -26,6 +26,8 @@ public class MyMain {
         myBinarySearchTree.insertNode(treeRoot,2);
         myBinarySearchTree.insertNode(treeRoot,3);
         myBinarySearchTree.insertNode(treeRoot,6);
+
+        queue.preOrderTraverse(treeRoot);
     }
 }
 }
