@@ -55,5 +55,8 @@ public class MyCircularQueue {
          endNode=new_Node;
          return;
      }
+     new_Node.setNextRef(currentNode.getNextRef());
+     currentNode.setNextRef(new_Node);
     }
+
 }
