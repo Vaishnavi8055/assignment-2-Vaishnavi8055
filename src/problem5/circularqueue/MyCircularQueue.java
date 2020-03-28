@@ -45,6 +45,9 @@ public class MyCircularQueue {
     }
 
     public void enqueueNode(Node new_Node){
-
+     if(frontNode==null){
+         currentNode=frontNode=new_Node;
+         return;
+     }
     }
 }
