@@ -12,10 +12,10 @@ import problem1.node.TreeNode;
 import problem4.Node.Node;
 
 public class MyQueue {
-   private Node front;
-   private Node end;
-   private Node current;
-   private int size;
+    private Node front;
+    private Node end;
+    private Node current;
+    private int size;
 
     public MyQueue() {
         this.front = null;
@@ -49,22 +49,22 @@ public class MyQueue {
     }
 
     public int getSize(MyQueue queue) {
-        queue.current=queue.front;
-        while(queue.current!=null){
+        queue.current = queue.front;
+        while (queue.current != null) {
             ++size;
-            queue.current=queue.current.getNext();
+            queue.current = queue.current.getNext();
         }
-        queue.current=queue.front;
+        queue.current = queue.front;
         return size;
     }
 
-    public void displayQueue(MyQueue queue){
-            while(queue.current!=null){
-                System.out.println(queue.current.getNode().getData() + " , ");
-                queue.current=queue.current.getNext();
-            }
-            System.out.println("\b");
-            queue.current=queue.front;
+    public void displayQueue(MyQueue queue) {
+        while (queue.current != null) {
+            System.out.println(queue.current.getNode().getData() + " , ");
+            queue.current = queue.current.getNext();
+        }
+        System.out.println("\b");
+        queue.current = queue.front;
     }
 
 
@@ -72,22 +72,21 @@ public class MyQueue {
         this.size = size;
     }
 
-    public void enqueueMethod(Node node){
-     if(front==null){
-         current=front=end=node;
-     }
-     else{
-         while (current.getNext()!=null){
-             current=current.getNext();
-         }
-         end=node;
-         current.setNext(node);
-         current=front;
-     }
+    public void enqueueMethod(Node node) {
+        if (front == null) {
+            current = front = end = node;
+        } else {
+            while (current.getNext() != null) {
+                current = current.getNext();
+            }
+            end = node;
+            current.setNext(node);
+            current = front;
+        }
     }
 
-    public void preOrderTraverse(TreeNode node){
-        if(node==null){
+    public void preOrderTraverse(TreeNode node) {
+        if (node == null) {
             return;
         }
         enqueueMethod(new Node(node));
@@ -95,9 +94,16 @@ public class MyQueue {
         preOrderTraverse(node.getRight());
     }
 
-    public void printpreOrderSuccesor(TreeNode node){
-
+    public void printPreOrderSuccessor(int data) {
+        current = front;
+        while (current.getNode().getData() != data && current != null) {
+            current = current.getNext();
+        }
+        try {
+            assert current != null;
+            System.out.println("PreOrderSuccessor : " + current.getNext().getNode().getData());
+        } catch (NullPointerException ignore) {
+            System.out.println("No Pre Order Successor Found !");
+        }
     }
-
-
 }
