@@ -10,6 +10,7 @@ package problem2.main;
 
 
 import problem1.mybst.MyBinarySearchTree;
+import problem1.node.TreeNode;
 import problem2.main.TraverseOperations.TraverseOperation;
 
 public class MyMain {
@@ -17,6 +18,7 @@ public class MyMain {
 
         TraverseOperation traverseOperation=new TraverseOperation();
         MyBinarySearchTree myBinarySearchTree=new MyBinarySearchTree();
+        TreeNode treeNode=new TreeNode(37);
 
     }
 
