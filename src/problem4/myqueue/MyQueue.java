@@ -58,6 +58,11 @@ public class MyQueue {
         return size;
     }
 
+    public void displayQueue(MyQueue queue){
+
+    }
+
+
     public void setSize(int size) {
         this.size = size;
     }
