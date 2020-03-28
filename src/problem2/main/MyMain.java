@@ -9,12 +9,15 @@ package problem2.main;
 // use problem1.mybst.MyBinarySearchTree class for creating binary tree
 
 
+import problem1.mybst.MyBinarySearchTree;
 import problem2.main.TraverseOperations.TraverseOperation;
 
 public class MyMain {
     public static void main(String[] args) {
 
         TraverseOperation traverseOperation=new TraverseOperation();
+        MyBinarySearchTree myBinarySearchTree=new MyBinarySearchTree();
+
     }
 
 }
