@@ -22,7 +22,7 @@ public class MyMain {
 
         TreeNode treeRoot = new TreeNode(32);
         myBinarySearchTree.insertNode(treeRoot,45);
-
+        myBinarySearchTree.insertNode(treeRoot,12);
     }
 }
 }
