@@ -61,6 +61,9 @@ public class MyBinarySearchTree {
     queue.add(null);
     while(queue.size()>0){
      TreeNode current=queue.peek();
+     if(current!=null){
+         System.out.println(current.getData()+" , ");
+     }
     }
    }
 
