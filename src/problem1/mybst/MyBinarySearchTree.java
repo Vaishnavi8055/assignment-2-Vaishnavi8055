@@ -55,8 +55,10 @@ public class MyBinarySearchTree {
 
    public void printLeftChildren(TreeNode root){
     if(root==null){
-
+    return;
     }
+    queue.add(root);
+    queue.add(null);
    }
 
 }
