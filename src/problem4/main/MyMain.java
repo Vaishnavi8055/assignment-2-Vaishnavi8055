@@ -24,6 +24,7 @@ public class MyMain {
         myBinarySearchTree.insertNode(treeRoot,45);
         myBinarySearchTree.insertNode(treeRoot,12);
         myBinarySearchTree.insertNode(treeRoot,2);
+        myBinarySearchTree.insertNode(treeRoot,3);
     }
 }
 }
