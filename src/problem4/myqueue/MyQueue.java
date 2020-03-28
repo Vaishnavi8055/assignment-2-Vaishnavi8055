@@ -14,4 +14,5 @@ import problem4.Node.Node;
 public class MyQueue {
    private TreeNode treeNode;
    private Node front;
+   private Node end;
 }
