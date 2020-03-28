@@ -95,5 +95,9 @@ public class MyQueue {
         preOrderTraverse(node.getRight());
     }
 
+    public void printpreOrderSuccesor(TreeNode node){
+
+    }
+
 
 }
