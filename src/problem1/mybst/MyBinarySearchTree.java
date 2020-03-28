@@ -46,6 +46,9 @@ public class MyBinarySearchTree {
             if(current.getLeft()!=null){
                 queues.add(current.getLeft());
             }
+            if(current.getRight()!=null){
+                queues.add(current.getRight());
+            }
         }
 
    }
