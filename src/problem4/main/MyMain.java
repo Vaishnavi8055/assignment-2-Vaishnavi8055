@@ -15,9 +15,14 @@ import java.util.Scanner;
 // executable class
 // use problem1.mybst.MyBinarySearchTree class for creating binary tree
 public class MyMain {
-    Scanner sc=new Scanner(System.in);
-    MyBinarySearchTree myBinarySearchTree=new MyBinarySearchTree();
-    MyQueue queue = new MyQueue();
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        MyBinarySearchTree myBinarySearchTree = new MyBinarySearchTree();
+        MyQueue queue = new MyQueue();
 
-    TreeNode treeRoot=new TreeNode(32);
+        TreeNode treeRoot = new TreeNode(32);
+        myBinarySearchTree.insertNode(treeRoot,45);
+
+    }
+}
 }
