@@ -87,6 +87,9 @@ public class MyCircularQueue {
         }
     }
 
+    public void remove(String name){
+
+
     }
 
 
