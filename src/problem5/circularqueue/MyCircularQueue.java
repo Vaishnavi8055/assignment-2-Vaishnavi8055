@@ -14,4 +14,9 @@ public class MyCircularQueue {
     private Node endNode;
     private Node currentNode;
 
+    public MyCircularQueue() {
+        frontNode = null;
+        endNode = null;
+        currentNode = null;
+    }
 }
