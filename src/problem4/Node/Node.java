@@ -6,5 +6,8 @@ public class Node {
     private TreeNode node;
     private Node next;
 
-
+    public Node(TreeNode node) {
+        this.node = node;
+        next = null;
+    }
 }
