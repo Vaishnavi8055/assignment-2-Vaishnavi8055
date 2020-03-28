@@ -30,6 +30,8 @@ public class MyMain {
         queue.preOrderTraverse(treeRoot);
         queue.displayQueue(queue);
 
+        System.out.println("Enter an element of which you want a Successor :");
+        queue.printPreOrderSuccessor(sc.nextInt());
     }
 }
 }
