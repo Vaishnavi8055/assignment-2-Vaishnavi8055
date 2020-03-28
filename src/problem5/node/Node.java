@@ -12,4 +12,9 @@ import problem5.student.Student;
 public class Node {
     private Student student;
     private Node nextRef;
+
+    public Node(Student student1) {
+        this.student = student1;
+        nextRef = null;
+    }
 }
