@@ -35,22 +35,25 @@ public class MyBinarySearchTree {
        Queue<TreeNode> queues=new LinkedList<TreeNode>();
         queues.add(root);
         int count=0;
-        while(queues !=null){
-            TreeNode current=queues.poll();
-            if (current==null){
+        while(queues !=null) {
+            TreeNode current = queues.poll();
+            if (current == null) {
                 break;
             }
-            if(current.getLeft()==null){
+            if (current.getLeft() == null) {
                 count++;
             }
-            if(current.getLeft()!=null){
+            if (current.getLeft() != null) {
                 queues.add(current.getLeft());
             }
-            if(current.getRight()!=null){
+            if (current.getRight() != null) {
                 queues.add(current.getRight());
             }
-            System.out.println("Number of Nodes Without Left Child is :--"+count);
         }
+            System.out.println("Number of Nodes Without Left Child is :--"+count);
+   }
+
+   public void printLeftChildren(TreeNode root){
 
    }
 
