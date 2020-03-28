@@ -59,6 +59,9 @@ public class MyBinarySearchTree {
     }
     queue.add(root);
     queue.add(null);
+    while(queue.size()>0){
+
+    }
    }
 
 }
