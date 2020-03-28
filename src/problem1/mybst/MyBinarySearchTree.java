@@ -58,11 +58,10 @@ public class MyBinarySearchTree {
         }
         queue.add(root);
         queue.add(null);
-        System.out.print("Left Tree Nodes are :--");
         while (queue.size() > 0) {
             TreeNode current = queue.peek();
             if (current != null) {
-                System.out.print(current.getData() + " , ");
+                System.out.println(current.getData() + " , ");
                 while (queue.peek() != null) {
                     if (current.getLeft() != null) {
                         queue.add(current.getLeft());
@@ -77,9 +76,4 @@ public class MyBinarySearchTree {
             queue.remove();
         }
     }
-     public void leftNodesDisplay(TreeNode root){
-        queue=new LinkedList<TreeNode>();
-        printLeftChildren(root);
-    }
-}
 }

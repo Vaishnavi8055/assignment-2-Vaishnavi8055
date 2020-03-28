@@ -34,4 +34,3 @@ public class MyMain {
         queue.printPreOrderSuccessor(sc.nextInt());
     }
 }
-}

@@ -25,6 +25,6 @@ public class MyMain {
 
         myBinarySearchTree.countNodesWithoutLeftChild(treeRoot);
 
-         myBinarySearchTree.leftNodesDisplay(treeRoot);
+        myBinarySearchTree.printLeftChildren(treeRoot);
     }
 }

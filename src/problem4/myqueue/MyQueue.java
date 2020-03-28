@@ -60,7 +60,7 @@ public class MyQueue {
 
     public void displayQueue(MyQueue queue) {
         while (queue.current != null) {
-            System.out.println(queue.current.getNode().getData() + " , ");
+            System.out.print(queue.current.getNode().getData() + " , ");
             queue.current = queue.current.getNext();
         }
         System.out.println("\b");

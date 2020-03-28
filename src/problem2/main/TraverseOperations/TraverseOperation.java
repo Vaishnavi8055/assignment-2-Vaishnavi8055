@@ -14,7 +14,12 @@ public class TraverseOperation {
     }
 
     public void displayPreOrderTraverse(TreeNode node){
-
+       if(node==null){
+           return;
+       }
+        System.out.println(node.getData()+" ");
+        displayPreOrderTraverse(node.getLeft());
+        displayPreOrderTraverse(node.getRight());
     }
 
 }
