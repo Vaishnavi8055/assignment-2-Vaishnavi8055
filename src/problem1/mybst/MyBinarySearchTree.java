@@ -64,6 +64,9 @@ public class MyBinarySearchTree {
      if(current!=null){
          System.out.println(current.getData()+" , ");
      }
+     while(queue.peek()!=null){
+
+     }
     }
    }
 
