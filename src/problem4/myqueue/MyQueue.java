@@ -12,9 +12,15 @@ import problem1.node.TreeNode;
 import problem4.Node.Node;
 
 public class MyQueue {
-   private TreeNode treeNode;
    private Node front;
    private Node end;
    private Node current;
    private int size;
+
+    public MyQueue() {
+        this.front = null;
+        this.end = end;
+        this.current = null;
+        this.size = 0;
+    }
 }
