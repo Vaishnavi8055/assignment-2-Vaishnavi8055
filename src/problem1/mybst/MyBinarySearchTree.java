@@ -60,7 +60,7 @@ public class MyBinarySearchTree {
     queue.add(root);
     queue.add(null);
     while(queue.size()>0){
-
+     TreeNode current=queue.peek();
     }
    }
 
