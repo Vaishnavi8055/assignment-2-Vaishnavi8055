@@ -49,5 +49,11 @@ public class MyCircularQueue {
          currentNode=frontNode=new_Node;
          return;
      }
+     if(currentNode.getNextRef()==null){
+         currentNode.setNextRef(new_Node);
+         new_Node.setNextRef(currentNode);
+         endNode=new_Node;
+         return;
+     }
     }
 }
