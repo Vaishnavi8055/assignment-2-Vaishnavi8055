@@ -15,4 +15,5 @@ public class MyQueue {
    private TreeNode treeNode;
    private Node front;
    private Node end;
+   private Node current;
 }
