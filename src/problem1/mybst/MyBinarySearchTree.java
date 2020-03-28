@@ -32,6 +32,8 @@ public class MyBinarySearchTree {
            return;
        }
        Queue<TreeNode> queues=new LinkedList<TreeNode>();
+        queues.add(root);
+        int count=0;
 
    }
 
