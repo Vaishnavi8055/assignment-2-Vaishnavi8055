@@ -19,6 +19,7 @@ public class MyMain {
         TraverseOperation traverseOperation=new TraverseOperation();
         MyBinarySearchTree myBinarySearchTree=new MyBinarySearchTree();
         TreeNode treeNode=new TreeNode(37);
+        myBinarySearchTree.insertNode(treeNode,4);
 
     }
 
